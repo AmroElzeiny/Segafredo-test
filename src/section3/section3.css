@@ -1,0 +1,125 @@
+
+.section3{
+    width: 1440px;
+    height: 666px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    
+}
+.section3-container{
+    width: 82.6%;
+    height: 100%;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 78px 1fr;
+    row-gap: 20px; */
+}   
+
+
+.section3-texts-container{
+    width: 100%;
+    height: fit-content;
+
+}
+.section3-title-p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #333333;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.section3-text-p{
+    width: 670px;
+    height: 78px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #333333;
+}
+
+.section3-cards{
+    width: 1170px;
+    height: auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section3-card{
+    background-color: #f8f8f8;
+    width: 370px;
+    height: 191px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.card-text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #303030;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+.card-pic{
+    z-index: 10;
+}
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section3-button{
+    width: 115px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    position: relative;
+    top: 20px;
+    
+}
+.section3-button-text{
+    width: 91px;
+    height: 26px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    text-decoration-line: underline;
+    color: #697178;
+}
+.section3-button-arrow{
+    width: 12px;
+    height: 5px;
+    position: relative;
+    top: 13px;
+}
+
+/* background: linear-gradient(255.34deg, #F9F9F9 0%, #FFFFFF 32.74%, #E0E4E8 108.37%); */
