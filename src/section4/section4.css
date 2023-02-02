@@ -1,0 +1,243 @@
+.section4{
+    width: 100%;
+    height: 687px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.section4-container{
+    width: 82.6%;
+    height: 687px;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 78px 1fr;
+    row-gap: 20px; */
+}   
+.section4-title{
+    width: 530px;
+    height: 60px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #333333;
+    position: relative;
+    left: -319px;
+}
+.section4-cards-and-icons{
+    height: 484px;
+    width: 1224px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 3px;
+}
+
+
+.left-container-button{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    top: -81px;
+    cursor: pointer;
+    z-index: 2;
+}
+.left-container-button:hover .section4-left-arrow{
+    left: 4px;
+    transition-duration: 0.3s;
+}
+.section4-left-container{
+    width: 55px;
+    height: 100%;
+}
+.section4-left-arrow{
+    position: absolute;
+    left: 14.5px;
+    top: 23.5px;
+}
+
+.right-container-button{
+    width: 55px;
+    height: 55px;
+    position: relative;
+    top: -81px;
+    left: -53px;
+    cursor: pointer;
+    z-index: 2;
+}
+.right-container-button:hover .section4-right-arrow{
+    left: 24px;
+    transition-duration: 0.3s;
+}
+.section4-right-container{
+    width: 55px;
+    height: 100%;
+}
+.section4-right-arrow{
+    position: absolute;
+    left: 14.5px;
+    top: 23.5px;
+}
+
+
+
+.section4-cards{
+    width: 1232px;
+    height: 484px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 30px;
+    position: relative;
+    left: -27px;
+    
+    overflow: hidden;
+}
+.section4-card{
+    width: 270px;
+    height: 484px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transform: translateX(-30px);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.section4-card:hover .section4-card-empty-heart{
+    display: block;
+}
+.section4-card:hover .add-to-bag{
+    display: flex;
+    transition-duration: 0.3s;
+}
+.section4-card-image-container{
+    width: 270px;
+    height: 320px;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section4-card-empty-heart{
+    position: absolute;
+    z-index: 10;
+    right: 15px;
+    top: 15px;
+    display: none;
+
+}
+.section4-card-empty-heart:hover{
+    filter: invert(15%) sepia(68%) saturate(5191%) hue-rotate(346deg) brightness(88%) contrast(87%);
+    transition-duration: 0.3s;
+}
+.section4-card-full-heart{
+    position: absolute;
+    z-index: 10;
+    right: 15px;
+    top: 15px;
+    display: none;
+} 
+.add-to-bag{
+    position: absolute;
+    left: 0px;
+    bottom: 163px;
+    width: 100%;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    background: #333333;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 145%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.add-to-bag:hover{
+    background: #CB2031;
+    transition-duration: 0.3s;
+}
+
+.section4-card-info{
+    width: 270px;
+    height: 134px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 15px;
+}
+.section4-card-title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 145%;
+    color: #333333;
+    height: 26px;
+}
+.section4-card-description{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    color: #333333;
+    height: 26px;
+    position: relative;
+    top: -11px;
+}
+.section4-card-price{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 145%;
+    color: #333333;
+    height: 32px;
+    position: relative;
+    top: -14px;
+}
+.section4-card-span{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    color: #333333;
+    height: 32px;
+}
+
+.section4-button{
+    width: 370px;
+    height: 60px;
+    background: #CB2031;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 145%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    position: relative;
+    top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.section4-button:hover{
+    background: #333333;
+    transition-duration: 0.3s;
+}

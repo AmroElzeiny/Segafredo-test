@@ -8,6 +8,7 @@ const Section1 = () => {
     
     return (
         <div className='section1'>
+            <div className="section1-container">
             <p className='section1-text'>
                 it’s more than a cup of coffee It’s <span className='section1-span'>an experience to be enjoyed</span>
             </p>
@@ -37,7 +38,7 @@ const Section1 = () => {
                         }}/>
                 </a>
                 </div>
-            </div>
+            </div></div>
         </div>
   )
 }

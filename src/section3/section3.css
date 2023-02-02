@@ -1,7 +1,7 @@
 
 .section3{
-    width: 1440px;
-    height: 666px;
+    width: 100%;
+    min-height: 666px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
     /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 78px 1fr;
@@ -22,9 +23,13 @@
 
 
 .section3-texts-container{
-    width: 100%;
-    height: fit-content;
-
+    width: 670px;
+    height: 158px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 135px;
+    top: 0px;
 }
 .section3-title-p{
     font-family: 'Lato';
@@ -37,7 +42,8 @@
     height: 60px;
     margin: 0px;
     padding: 0px;
-    
+    position: relative;
+    left: -319px;
 }
 
 .section3-text-p{
@@ -49,14 +55,36 @@
     font-size: 18px;
     line-height: 145%;
     color: #333333;
+    position: relative;
+    left: -249px;
+}
+.section3-cards-container{
+    width: 1440px;
+    height: 412px;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 
 .section3-cards{
     width: 1170px;
-    height: auto;
+    height: 413px;
     display: flex;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px; */
+}
+
+
+.section3-map{
+    width: 370px;
+    height: 191px;
 }
 
 .section3-card{
@@ -66,6 +94,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    cursor: pointer;
+}
+.section3-card:hover{
+    background-color: #f9f9f9;
 }
 .card-text{
     font-family: 'Lato';
@@ -84,8 +116,12 @@
 }
 .button-container{
     width: 100%;
+    height: fit-content;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 20px;
+    
 }
 .section3-button{
     width: 115px;
@@ -122,4 +158,54 @@
     top: 13px;
 }
 
+
+
+
+
+
+
+
+
+.show-less-container{
+    width: 115px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    position: relative;
+    top: 461px;
+    left: 45.1%;
+    
+}
+
+.section3-button-text{
+    width: 91px;
+    height: 26px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    text-decoration-line: underline;
+    color: #697178;
+}
+.section3-show-less-arrow{
+    width: 12px;
+    height: 5px;
+    position: relative;
+    top: 48%;
+}
+.section3-show-less-arrow{
+    transform: scaleY(-1)
+}
+.show-less-container{
+    display: none;
+}
 /* background: linear-gradient(255.34deg, #F9F9F9 0%, #FFFFFF 32.74%, #E0E4E8 108.37%); */

@@ -1,0 +1,199 @@
+.section5{
+    display: flex;
+    justify-content: center;    
+}
+.section5-container{
+    width: 82.6%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.section5-title{
+    width: 726px;
+    height: 120px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;    
+    text-transform: uppercase;
+    color: #333333;
+    position: relative;
+    left: -221px;
+}
+.section5-cards{
+    width: 1200px;
+    /* display: grid;
+    grid-template-columns: 370px 370px 370px;
+    column-gap: 30px; */
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 30px;
+    position: relative;
+    top: 40px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+.section5-card-container{
+    min-width: 370px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.section5-card{
+    width: 290px;
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    
+}   
+.section5-card-name-and-stars{
+    width: 290px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section5-card-name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 145%;
+    color: #F9F9F9;
+    height: 26px;
+}
+.section5-card-stars{
+    height: 20px;
+    width: 100px;
+}
+.section5-card-months-number{
+    width: 290px;
+    height: 23px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #D9D9D9;
+    position: absolute;
+    top: 70px;
+}
+.section5-card-comment{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 145%;
+    color: #F9F9F9;
+    position: absolute;
+    top: 123px;
+    width: 290px;
+}
+.section5-card-quote{
+    width: 84.34px;
+    height: 64.54px;
+    position: relative;
+    top: 128px;
+    left: 92px;
+}
+.section5-card-google-icon{
+    width: 31px;
+    height: 31px;
+    position: relative;
+    top: 154px;
+}
+.section5-card-google-reviews{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
+    color: #D9D9D9;
+    height: 20px;
+    position: relative;
+    top: 160px;
+    left: 9px;
+}
+.section5-slider-container{
+    width: 1200px;
+    height: 55px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+.dots-container{
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 7px;
+    width: 118px;
+    height: 18px;
+}
+.left-button-container{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    position: relative;
+}
+.left-button-circle{
+    position: relative;
+    width: 55px;
+    height: 55px;
+}
+.left-button-arrow{
+    position: absolute;
+    width: 24.51px;
+    left: 15px;
+    top: 23.5px;
+}
+.left-button-container:hover .left-button-arrow{
+    left: 5px;
+    transition-duration: 0.3s;
+}
+.right-button-container{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+
+}
+.right-button-arrow{
+    position: absolute;
+    width: 24.51px;
+    left: 15px;
+    top: 23.5px;
+}
+.right-button-container:hover .right-button-arrow{
+    left: 25px;
+    transition-duration: 0.3s;
+}
+.dot-1{background: #333333;min-width: 18px;
+    min-height: 18px;
+    border-radius: 50%;}
+
+.dot{
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 50%;
+    background: #D9D9D9;
+}
+.selected{
+    min-width: 18px;
+    min-height: 18px;
+    border-radius: 50%;
+    background: #D9D9D9;
+}
+#dot-active{
+    background: #333333;
+    border-radius: 50%;
+}

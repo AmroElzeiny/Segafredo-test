@@ -10,8 +10,8 @@ import section3_button_arrow from '../images/section3-button-arrow.svg'
 import { useState } from 'react'
 
 const Section3 = () => {
-    var [load, setLoad] = useState(false)
-    var [cards, setCards] = useState([
+    const [visible, setVisible] = useState(6)
+    const [cards, setCards] = useState([
         {id:1, text: 'coffee', image: card1_img},
         {id:2, text: 'Coffee\nMachines', image: card2_img},
         {id:3, text: 'Cafe\nand\nrestau-\nrant', image: card3_img},
@@ -33,7 +33,7 @@ const Section3 = () => {
         
     function load_more(){
         return(cards.map(        
-        function(card){setLoad(false); return(<div className="section3-card" key={card.id}>
+        function(card){ return(<div className="section3-card" key={card.id}>
             <p className='card-text'>
                 {card.text}
             </p>
@@ -41,8 +41,26 @@ const Section3 = () => {
             </div>)})
         )
     }
+    function isVisible(){
+        return(setVisible(prevState => prevState+6))
+    }
+    function isnotVisible(){
+        return(setVisible(visible))
+    }
+    function show_less(){
+        document.getElementById('button-container').style.display = 'none';
+        document.getElementById('show-less-container').style.display = 'flex';
+        document.getElementById('section4-and5-and6-container').style.top = '742px';
 
+    }
+    function show_more(){
+        document.getElementById('button-container').style.display = 'flex';
+        document.getElementById('show-less-container').style.display = 'none';
+        setVisible(prevState => prevState-6)
+        document.getElementById('section4-and5-and6-container').style.top = '301px';
 
+        
+    }
   return (
     <div className="section3">
         <div className="section3-container">
@@ -58,16 +76,45 @@ const Section3 = () => {
             </div>
 
 
-            <div className="section3-cards">
-                {load? load_more().map(item => <div>{item}</div>): null}
+            {/* <div className="section3-cards">
+                {load? load_more().map(item => <div>{item}</div>): console.log('hello')}
                 
             </div>
 
             <div className="button-container">
-                <button className="section3-button" >
+                <button className="section3-button"  onClick={isTrue} >
                     <p className='section3-button-text'>Show More</p>
-                    <img src={section3_button_arrow} alt='img' className='section3-button-arrow' onClick={load = true}/>
+                    <img src={section3_button_arrow} alt='img' className='section3-button-arrow'/>
                 </button>
+            </div> */}
+
+            <div className="section3-cards-container">
+                <div className="section3-cards">
+                    {load_more().slice(0, visible).map(item => 
+                    <div key={item.id} className='section3-map'>
+                        <div className='section3-card'>
+                            {item}
+                        </div>
+                        
+                    </div>)}
+            </div>
+
+
+                <div className="button-container" id='button-container'>
+                        <button className="section3-button"  onClick={function (){isVisible(); show_less()}} >
+                            <p className='section3-button-text' id='section3-button-text'>Show More</p>
+                            <img src={section3_button_arrow} alt='img' id='section3-button-arrow' className='section3-button-arrow'/>
+                        </button>
+                    </div>
+
+
+                <div className="show-less-container" id='show-less-container'>
+                        <button className="section3-button"  onClick={function (){isnotVisible(); show_more()}} >
+                            <p className='section3-button-text' id='section3-button-text'>Show Less</p>
+                            <img src={section3_button_arrow} alt='img' id='section3-button-arrow' className='section3-show-less-arrow'/>
+                        </button>
+                </div>
+
             </div>
         </div>
     </div>
