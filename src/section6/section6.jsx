@@ -1,9 +1,9 @@
 import React from 'react'
 import './section6.css'
 
-const section6 = () => {
+const Section6 = () => {
   return (
-    <div className="section6">
+    <div className="section6" id='section6'>
         <div className="section6-container">
             <div className="section6-title">
                 Get in touch!
@@ -41,4 +41,4 @@ const section6 = () => {
     )
 }
 
-export default section6
+export default Section6

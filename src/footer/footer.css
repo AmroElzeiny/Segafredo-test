@@ -1,9 +1,14 @@
+a{
+    text-decoration: none;
+    margin:0px;
+    padding: 0px;
+}
 .footer{
-    min-width: 100%;
-    min-height: 294px;
+    width: 100%;
+    height: 289px;
     background: #333333;
     position: relative;
-    top: 536px;
+    top: 748px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +49,8 @@ a{
     text-transform: uppercase;
     width: 68px;
     height: 20px;
+    position: relative;
+    left: -8px;
 }
 .footer-icons{
     width: 159px;
@@ -52,7 +59,7 @@ a{
     flex-wrap: nowrap;
     column-gap: 23px;
     position: relative;
-    left: 532px;
+    left: 487px;
     top: -184px;
 }
 .footer-info{
@@ -66,13 +73,20 @@ a{
     width: 342px;
     height: 52px;
     position: relative;
-    right: -885px;
-    bottom: 76px;
+    right: -833px;
+    bottom: 79px;
 }
 .footer-logo{
     width: 123px;
     height: 60px;
-    position: relative;
-    top: -290px;
-    left: 1096px;
 }
+.footer-logo-anchor{
+    position: relative;
+    top: -289px;
+    left: 1049px;
+}
+@media(max-width: 768px){
+    .footer{
+        display: none;
+    }
+    }

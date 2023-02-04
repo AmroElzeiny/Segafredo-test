@@ -1,9 +1,13 @@
 .section5{
     display: flex;
-    justify-content: center;    
+    justify-content: center;   
+    width: 100%;
+    height: 655px;
+    position: relative;
+    top: 482px; 
 }
 .section5-container{
-    width: 82.6%;
+    width: 1168px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -23,7 +27,7 @@
     left: -221px;
 }
 .section5-cards{
-    width: 1200px;
+    width: 1168px;
     /* display: grid;
     grid-template-columns: 370px 370px 370px;
     column-gap: 30px; */
@@ -31,7 +35,7 @@
     flex-wrap: nowrap;
     column-gap: 30px;
     position: relative;
-    top: 40px;
+    top: 17px;
     transition-duration: 0.4s;
     overflow: hidden;
 }
@@ -125,7 +129,7 @@
     width: 1200px;
     height: 55px;
     position: relative;
-    top: 70px;
+    top: 24px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -160,6 +164,7 @@
     left: 5px;
     transition-duration: 0.3s;
 }
+
 .right-button-container{
     position: relative;
     width: 55px;
@@ -197,3 +202,8 @@
     background: #333333;
     border-radius: 50%;
 }
+@media(max-width: 768px){
+    .section5{
+        display: none;
+    }
+    }

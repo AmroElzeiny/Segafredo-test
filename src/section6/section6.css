@@ -1,13 +1,14 @@
 .section6{
     height: 597px;
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 45px;
+    top: 558px;
+    left: -109px;
 }
 .section6-container{
-    max-width: 830px;
+    max-width: 1168px;
     max-height: 452px;
     display: flex;
     justify-content: center;
@@ -206,3 +207,8 @@ span{
 }
 
 
+@media(max-width: 768px){
+    .section6{
+        display: none;
+    }
+    }

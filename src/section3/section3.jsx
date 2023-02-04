@@ -50,16 +50,22 @@ const Section3 = () => {
     function show_less(){
         document.getElementById('button-container').style.display = 'none';
         document.getElementById('show-less-container').style.display = 'flex';
-        document.getElementById('section4-and5-and6-container').style.top = '742px';
+        document.getElementById('section4').style.top = '824px';
+        document.getElementById('section5').style.top = '924px';
+        document.getElementById('section6').style.top = '1000px';
+        document.getElementById('footer').style.top = '1190px';
+        document.getElementById('main-container').style.height = '5402px';
 
     }
     function show_more(){
         document.getElementById('button-container').style.display = 'flex';
         document.getElementById('show-less-container').style.display = 'none';
-        setVisible(prevState => prevState-6)
-        document.getElementById('section4-and5-and6-container').style.top = '301px';
-
-        
+        setVisible(prevState => prevState-6)    
+        document.getElementById('section4').style.top = '382px';
+        document.getElementById('section5').style.top = '482px';
+        document.getElementById('section6').style.top = '558px';
+        document.getElementById('footer').style.top = '748px';
+        document.getElementById('main-container').style.height = '4960px';
     }
   return (
     <div className="section3">

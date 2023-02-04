@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import truck from '../images/truck.svg'
 import call from '../images/customer service.svg'
 import shop from '../images/cart-3.svg'
@@ -8,8 +8,11 @@ import heart from '../images/heart.svg'
 import red_heart from '../images/red-heart.svg'
 import cart from '../images/cart2.svg'
 import './Header.css'
+import nav_red_cart from '../images/nav-salla.svg'
+import nav_red_circle from '../images/nav-red-circle.svg'
 
-const Header = (props) => {
+const Header = ({props,addedArray}) => {
+
   return (
     
     <div className="header">
@@ -49,20 +52,24 @@ const Header = (props) => {
       </div>
 
       <div className="header-icons">
-        <a href='/'>
+        <a href='/' className='ha1'>
           <img src={person} alt='img' className='header-person'/>
         </a>
 
-        <a href='/'>
+        <a href='/' className='ha2'>
           <img src={verticalLine} alt='img' className='header-line'/>
         </a>
 
-        <a href='/'>
+        <a href='/' className='ha3'>
           <img src={heart} alt='img' className='header-heart'/>
         </a>
 
-        <a href='/'>
-          <img src={cart} alt='img' className='header-cart'/>
+        <a href='/' className='ha4'>
+          <img src={nav_red_cart} alt='img' className='header-cart'/>
+        </a>
+        <a href='/' className='ha5'>
+          <img src={nav_red_circle} alt='img' className='header-red-circle'/>
+          <p>{addedArray.length}</p>
         </a>
       </div>
     </div></div>

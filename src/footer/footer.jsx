@@ -8,7 +8,7 @@ import footer_logo from '../images/footer_logo.svg'
 
 const footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id='footer'>
         <div className="footer-container">
                 <div className="footer-items">
                     <a href='/' className='icon1'>HOME COFFEE</a>
@@ -35,7 +35,7 @@ const footer = () => {
                 1A Arthur Brown Pl Mount Wellington, Auckland 1060<br/>
                 Phone: 0800 377 737
                 </div>
-                <a href='/'><img src={footer_logo} className='footer-logo' alt='img'/></a>
+                <a href='/' className='footer-logo-anchor'><img src={footer_logo} className='footer-logo' alt='img'/></a>
         </div>
     </div>
     )

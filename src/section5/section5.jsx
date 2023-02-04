@@ -102,6 +102,13 @@ const Section5 = () => {
     }
    
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+        setIndex((index + 1)% 5);
+        }, 1500);
+        return () => clearInterval(intervalId);
+    }, [index]);
+
 
 
 
@@ -111,7 +118,7 @@ const Section5 = () => {
     
 
   return (
-    <div className='section5'>
+    <div className='section5' id='section5'>
         <div className="section5-container">
 
 
