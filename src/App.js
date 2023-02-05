@@ -12,17 +12,23 @@ import Section6 from './section6/section6.jsx';
 
 function App() {
 
-var updateArray = (data)=>{setAddedArray(data)}
-const [addedArray, setAddedArray] = useState([],()=>addedArray.push(3))
-  return (
+const [addedArray, setAddedArray] = useState([])
+const [active, setActive] = useState(false)
+
+let updateArray = (data)=>(setAddedArray(
+  (add)=>{
+   return [...add,data]
+  }
+))
+return (
     <div className="App">
       <div className='main-container' id='main-container'>
-        <Header addedArray = {addedArray} setAddedArray={setAddedArray}/>
+        <Header addedArray = {addedArray} active={active} setAddedArray={setAddedArray}/>
         <Nav/>
         <Section1/>
         <Section2/>
         <Section3/>
-          <Section4 updateArray={updateArray} addedArray={addedArray} setAddedArray={setAddedArray}/>
+          <Section4 active={active} setActive={setActive} updateArray={updateArray} addedArray={addedArray} setAddedArray={setAddedArray}/>
           <Section5/>
           <Section6/>
           <Footer/>

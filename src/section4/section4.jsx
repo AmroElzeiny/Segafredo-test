@@ -13,7 +13,7 @@ import section4_icon_container from '../images/section4-icon-container.svg'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-const Section4 = ({addedArray, setAddedArray, updateArray}) => {
+const Section4 = ({addedArray, setAddedArray, updateArray, setActive, active}) => {
     const [cardss, setCardss] = useState([
         {id: 1, image: section4_img1, title: 'COFFEE BEANS', description: 'Intermezzo Beans 500g', price: '$20', empty: empty_heart, full: full_heart},
         {id: 2, image: section4_img2, title: 'COFFEE MACHINES', description: 'Dr. Coffee Minibar', price: '$5,050.00 – $6,050.00', empty: empty_heart, full: full_heart},
@@ -28,7 +28,6 @@ const Section4 = ({addedArray, setAddedArray, updateArray}) => {
         //     document.getElementsByClassName('add-to-bag')[id].style.background = '#CB2031';
         //     document.getElementsByClassName('add-to-bag')[id].style.color = '#FFFFFF';
         //  }
-        const [active, setActive] = useState(false)
         const [empty, setEmpty] = useState(true)
 
     const cardss_map = cardss.map(card => <div className="section4-card" key={card.id} id='section4-card'>
@@ -37,11 +36,12 @@ const Section4 = ({addedArray, setAddedArray, updateArray}) => {
                                                     <img alt='img' src={card.empty} className='section4-card-empty-heart' onClick={()=>{document.getElementsByClassName('section4-card-full-heart')[card.id-1].style.display = 'block'; setEmpty(previousState=>!previousState)}}/>
                                                     <img alt='img' src={card.full} className='section4-card-full-heart' onClick={()=>{document.getElementsByClassName('section4-card-full-heart')[card.id-1].style.display = 'none'; setEmpty(previousState=>!previousState)}}/>
                                                     <div className="add-to-bag" id='add-to-bag' 
-                                                    onClick={(e)=>{
+                                                    onClick={
+                                                        (e)=>{
                                                         setActive((previous)=>!previous);
                                                         document.getElementsByClassName('add-to-bag')[card.id-1].style.background = (active?'#333333':'#CB2031');
-                                                        addedArray.push(card.id);
-                                                        console.log(addedArray)}}>Add to bag</div>
+                                                        updateArray(()=>{return card.id})
+                                                        }}>Add to bag</div>
                                                 </div>
                                                 <div className="section4-card-info">
                                                 <div className="section4-card-title">

@@ -64,8 +64,12 @@ line-height: 17px;
 text-transform: uppercase;
 
 color: #F9F9F9;
+transition-duration: 0.3s;
 
 
+}
+.a1:hover, .a2:hover, .a3:hover, .a4:hover, .a5:hover, .a6:hover {
+    color: #CB2031;
 }
 .a2{
     min-width: 129px;
@@ -79,6 +83,7 @@ line-height: 17px;
 /* identical to box height */
 
 text-transform: uppercase;
+transition-duration: 0.3s;
 
 color: #F9F9F9;
 

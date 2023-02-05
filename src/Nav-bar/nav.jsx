@@ -275,10 +275,10 @@ const Nav = () => {
                     <img src= {nav_circle} alt='img' className='nav-circle'/>
                   </div>
                   <div className="nav-side-menu-section4-icons">
-                    <img alt='img' src={nav_facebook}/>
-                    <img alt='img' src={nav_instagram}/>
-                    <img alt='img' src={nav_linkedin}/>
-                    <img alt='img' src={nav_google}/>
+                    <a href='/'><img alt='img' src={nav_facebook}/></a>
+                    <a href='/'><img alt='img' src={nav_instagram}/></a>
+                    <a href='/'><img alt='img' src={nav_linkedin}/></a>
+                    <a href='/'><img alt='img' src={nav_google}/></a>
                   </div>
                   <img src={nav_block} alt='img' className="nav-side-menu-block"/>
               </div>

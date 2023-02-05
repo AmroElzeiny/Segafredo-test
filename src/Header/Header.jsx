@@ -5,13 +5,11 @@ import shop from '../images/cart-3.svg'
 import person from '../images/circle-user.svg'
 import verticalLine from '../images/Line 26.svg'
 import heart from '../images/heart.svg'
-import red_heart from '../images/red-heart.svg'
-import cart from '../images/cart2.svg'
 import './Header.css'
 import nav_red_cart from '../images/nav-salla.svg'
 import nav_red_circle from '../images/nav-red-circle.svg'
 
-const Header = ({props,addedArray}) => {
+const Header = ({props,addedArray,active, setAddedArray}) => {
 
   return (
     
